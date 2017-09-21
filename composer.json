@@ -16,7 +16,7 @@
         }
     },
     "require": {
-        "jimdo/prometheus_client_php": "^0.7.0",
+        "tuanonehour/prometheus_client_php": "dev-master",
         "illuminate/support": "^5.3"
     },
     "require-dev": {

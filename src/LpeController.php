@@ -2,7 +2,7 @@
 namespace Tback\PrometheusExporter;
 
 use Illuminate\Http\Response;
-use App\Http\Controllers\Controller;
+use Laravel\Lumen\Routing\Controller;
 use Prometheus\RenderTextFormat;
 
 /**

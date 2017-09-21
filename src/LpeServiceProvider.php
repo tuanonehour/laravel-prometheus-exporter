@@ -2,7 +2,7 @@
 namespace Tback\PrometheusExporter;
 
 use Illuminate\Support\ServiceProvider;
-
+use Prometheus\Storage\Predis;
 /**
  * Class LpeServiceProvider
  * @package Tback\PrometheusExporter
@@ -45,6 +45,11 @@ class LpeServiceProvider extends ServiceProvider
         switch (config('prometheus_exporter.adapter')) {
             case 'apc':
                 $this->app->bind('Prometheus\Storage\Adapter', 'Prometheus\Storage\APC');
+                break;
+            case 'predis':
+                $this->app->bind('Prometheus\Storage\Adapter', function() {
+                    return new Predis(app('redis')->connection());
+                });
                 break;
             case 'redis':
                 $this->app->bind('Prometheus\Storage\Adapter', function($app){
