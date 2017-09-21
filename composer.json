@@ -1,13 +1,13 @@
 {
-    "name": "tback/laravel-prometheus-exporter",
+    "name": "tuanonehour/prometheus-exporter-lumen",
     "description": "A prometheus exporter for the Laravel web framework",
     "keywords": ["laravel", "prometheus"],
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Till Backhaus",
-            "email": "till@backha.us"
+            "name": "Tuan Do",
+            "email": "tuanonehour@gmail.com"
         }
     ],
     "autoload": {
