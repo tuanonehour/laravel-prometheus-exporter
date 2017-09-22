@@ -1,5 +1,5 @@
 {
-    "name": "tuanonehour/prometheus-exporter-lumen",
+    "name": "tuanonehour/laravel-prometheus-exporter",
     "description": "A prometheus exporter for the Laravel web framework",
     "keywords": ["laravel", "prometheus"],
     "type": "library",
@@ -7,7 +7,7 @@
     "authors": [
         {
             "name": "Tuan Do",
-            "email": "tuanonehour@gmail.com"
+            "email": "tuanda831@gmail.com"
         }
     ],
     "autoload": {
